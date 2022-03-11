@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const cookieSession = require("cookie-session");
-var Keygrip = require("keygrip");
+// const cookieSession = require("cookie-session");
+// var Keygrip = require("keygrip");
 
 const logIn = require('./route/login');
 
@@ -17,7 +17,7 @@ app.set("view engine", "ejs")
 
 
 
-
+app.use("/", homepage);
 app.use("/logIn", logIn);
 
 
