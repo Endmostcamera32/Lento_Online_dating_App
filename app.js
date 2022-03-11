@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
         } else {
           const theSessionIsNew = false;
           const useNameOfTheLoggedInUser = req.session.uname;
-          res.render("index", {useNameOfTheLoggedInUser});
+          res.render("homePage", {useNameOfTheLoggedInUser});
         }
     })
 })
