@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const cookieSession = require("cookie-session");
-var Keygrip = require("keygrip");
+// const cookieSession = require("cookie-session");
+// var Keygrip = require("keygrip");
 
 const logIn = require('./route/login');
 
@@ -39,7 +39,7 @@ app.get('/', (req, res) => {
 
 
 
-
+app.use("/", homepage);
 app.use("/logIn", logIn);
 
 
