@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 // var Keygrip = require("keygrip");
 
 const logIn = require('./route/login');
-
+const homePage = require("./route/homepage");
 
 
 
@@ -12,16 +12,16 @@ const app = express();
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.set("view engine", "ejs")
-app.use(
-  cookieSession({
-    name: "session",
-    keys: new Keygrip(
-      ["ThisIsThe09OFirstKey#!!$nonoyeah", "thisISSSSNOTTHEFIRSTKEY@@!!"],
-      "SHA384",
-      "base64"
-    ),
-  })
-);
+// app.use(
+//   cookieSession({
+//     name: "session",
+//     keys: new Keygrip(
+//       ["ThisIsThe09OFirstKey#!!$nonoyeah", "thisISSSSNOTTHEFIRSTKEY@@!!"],
+//       "SHA384",
+//       "base64"
+//     ),
+//   })
+// );
 
 app.get('/', (req, res) => {
     app.get("/", (req, res) => {
@@ -39,7 +39,7 @@ app.get('/', (req, res) => {
 
 
 
-app.use("/", homepage);
+app.use("/", homePage);
 app.use("/logIn", logIn);
 
 
