@@ -1,13 +1,9 @@
 {
-	"name": "tutorial",
-	"version": "1.0.0",
-	"scripts": {
-		"start": "node index.js"
-	},
-	"dependencies": {
-		"mysql": "^2.18.1",
-		"mysql2": "^2.1.0"
-	},
-	"author": "Patrick",
-	"license": "ISC"
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "express-cookie": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15"
+  }
 }
