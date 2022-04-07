@@ -1,0 +1,59 @@
+/* #slider {
+} */
+.sliderContainer p {
+  font-size: 26px;
+  font-weight: 600;
+  font-family: Open Sans;
+  padding-left: 30px;
+  color: black;
+  display: inline-block;
+}
+.sliderContainer input[type="range"] {
+  -webkit-appearance: none !important;
+  width: 330px;
+  height: 6px;
+  background: black;
+  border: 3px;
+  outline: none;
+  border-radius: 3px;
+}
+.sliderContainer input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  width: 14px;
+  height: 14px;
+  background: #fcfcfc;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* .sliderContainer input[type="range"]::-webkit-slider-thumb:hover {
+  background: #7e6d57;
+} */
+
+.options {
+  text-align: center;
+}
+
+.contents {
+  text-align: left;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+a.nav-link {
+  padding: 0;
+  color: black;
+}
+
+.rangeValue {
+  font-family: "Poppins", sans-serif;
+}
+
+.show {
+  margin-top: 20px;
+}
+
+img.nav {
+  width: 100%;
+}

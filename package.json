@@ -1,9 +1,5 @@
 {
   "dependencies": {
-    "body-parser": "^1.19.2",
-    "express": "^4.17.3",
-    "express-cookie": "^4.17.1",
-    "mysql2": "^2.3.3",
-    "nodemon": "^2.0.15"
+    "bootstrap-icons": "^1.8.1"
   }
 }
